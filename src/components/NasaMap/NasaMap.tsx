@@ -1,21 +1,25 @@
 import { useState } from "react";
 import type { MapProps } from "./types";
 
+const handleLoadCallback = ({ layerId, date }: { layerId: string; date: string }) => {
+  // TODO: Replace with real GIBS fetch/rendering
+  console.log("Load requested:", { layerId, date });
+};
+
 export default function NasaMap({
   layers,
   labels,
   initialLayerId,
   initialDate,
-  onLoad,
 }: MapProps) {
   const today = new Date().toISOString().slice(0, 10);
   const [layerId, setLayerId] = useState<string>(initialLayerId ?? layers[0]?.id ?? "");
   const [date, setDate] = useState<string>(initialDate ?? today);
 
   const handleLoad = () => {
-    onLoad?.({ layerId, date });
+    handleLoadCallback?.({ layerId, date });
     // Temporary demo feedback:
-    if (!onLoad) {
+    if (!handleLoadCallback) {
       alert(`${labels.load}: ${layerId} @ ${date}`);
     }
   };

@@ -11,12 +11,6 @@ export default function App() {
   const [lang, setLang] = useState<Lang>("en");
   const t = TEXT[lang];
 
-  const handleLoad = ({ layerId, date }: { layerId: string; date: string }) => {
-    // TODO: Replace with real GIBS fetch/rendering
-    console.log("Load requested:", { layerId, date });
-    alert(`${t.mapLabels.load}: ${layerId} @ ${date}`);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
 
@@ -34,12 +28,10 @@ export default function App() {
           desc={t.desc}
           primary={t.primary}
           secondary={t.secondary}
-          onLoad={handleLoad}
         />
         <NasaMap
           layers={LAYERS}
           labels={t.mapLabels}
-          onLoad={handleLoad}
         />
       </section>
 
