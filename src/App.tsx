@@ -90,8 +90,6 @@ export default function App() {
           desc={t.desc}
           primary={t.primary}
           secondary={t.secondary}
-          mapLabels={t.mapLabels}
-          layers={LAYERS}
           onLoad={handleLoad}
         />
         <NasaMap
