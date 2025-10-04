@@ -1,2 +1,1 @@
-# frontend-cluster-opita
-
+# Frontend | Cluster Opita Team
