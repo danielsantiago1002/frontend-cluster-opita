@@ -1,3 +1,0 @@
-@import "tailwindcss"; /* v4 single import */
-
-html, body, #root { height: 100%; } /* optional */
