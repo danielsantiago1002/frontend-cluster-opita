@@ -97,7 +97,7 @@ export const MapPicker: React.FC<MapPickerProps> = ({
   }
 
   return (
-    <div className='border-1' style={{ height, width: '100%' }}>
+    <div className='border-1 z-0 w-full h-full'>
       <MapContainer
         center={center}
         zoom={initialZoom}
