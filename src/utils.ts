@@ -5,7 +5,7 @@ export const TEXT = {
     brand: 'A.D.A (Astronomical Data Animator)',
     title:
       'Create Vegetation coverage, CO level and Snow coverage map animations in minutes',
-    desc: 'Leverage some of the NASA Terra Satellite instruments data (ASTER, MODIS, MOPITT) to create animations of Vegetation coverage, CO level and Snow coverage. Define a date range and a point of interest in the world to start generating your animation.',
+    desc: 'Leverage some of the NASA Terra Satellite instruments data (ASTER, MODIS, MOPITT) to create animations of Vegetation coverage (NDVI), CO (carbon monoxide) level and Snow coverage. Define a date range and a point of interest in the map to start generating your animation.',
     navFeatures: 'Features',
     featuresTitle: 'Features',
     featuresSubtitle: 'Essentials for exploring NASA layers.',
@@ -27,6 +27,7 @@ export const TEXT = {
       mapPlaceholder: 'NASA GIBS map preview here',
       videoResultAllLayers: 'Video result with all layers (CO, NDVI, Snow)',
       videoResultSideBySide: 'Snow vs NDVI (split view)',
+      videoDownloadLink: 'Download Video (MP4)',
     } satisfies MapLabels,
     terra: {
       heading: 'Meet Terra: NASA’s flagship Earth-observing satellite',
@@ -48,7 +49,7 @@ export const TEXT = {
     brand: 'A.D.A (Animador de Datos Astronómicos)',
     title:
       'Crea animaciones de cobertura vegetal, Niveles de CO y cobertura de nieve en minutos',
-    desc: 'Utiliza los datos de algunos instrumentos del satélite Terra de la NASA (ASTER, MODIS, MOPITT) para crear animaciones de la cobertura vegetal, el nivel de CO y la cobertura de nieve. Defina un rango de fechas y un punto de interés en el mundo para empezar a generar su animación.',
+    desc: 'Utiliza los datos de algunos instrumentos del satélite Terra de la NASA (ASTER, MODIS, MOPITT) para crear animaciones de la cobertura vegetal (NDVI), el nivel de CO (monóxido de carbono) y la cobertura de nieve. Define un rango de fechas y un punto de interés en el mapa para empezar a generar su animación.',
     navFeatures: 'Características',
     featuresTitle: 'Características',
     featuresSubtitle: 'Esenciales para explorar capas de la NASA.',
@@ -64,6 +65,7 @@ export const TEXT = {
       mapPlaceholder: 'Vista previa del mapa GIBS aquí',
       videoResultAllLayers: 'Video con todas las capas (CO, NDVI, Nieve)',
       videoResultSideBySide: 'Nieve vs NDVI (vista dividida)',
+      videoDownloadLink: 'Descargar Video (MP4)',
     } satisfies MapLabels,
     terra: {
       heading:

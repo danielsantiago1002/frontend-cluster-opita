@@ -410,7 +410,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
               <video controls src={videoMainUrl} width={720} />
               <div>
                 <a className="underline" href={videoMainUrl} download="ada-video.mp4">
-                  Download MP4
+                  {labels.videoDownloadLink}
                 </a>
               </div>
             </div>
@@ -421,7 +421,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
               <video controls src={videoSideUrl} width={720} />
               <div>
                 <a className="underline" href={videoSideUrl} download="ada-snow-vs-ndvi.mp4">
-                  Download MP4
+                  {labels.videoDownloadLink}
                 </a>
               </div>
             </div>

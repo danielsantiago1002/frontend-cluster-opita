@@ -8,6 +8,7 @@ export type MapLabels = {
   mapPlaceholder: string;
   videoResultAllLayers: string;
   videoResultSideBySide: string;
+  videoDownloadLink: string;
 };
 
 export type MapProps = {
