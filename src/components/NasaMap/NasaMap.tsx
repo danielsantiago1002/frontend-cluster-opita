@@ -24,8 +24,11 @@ export default function NasaMap({
           <div className="aspect-video text-lg rounded-xl  bg-gradient-to-br from-gray-100 to-gray-200 grid place-items-center text-sm text-gray-900">
             <div>Loading...</div>
           </div>
-        ) : (
+        ) : null
+      }
 
+      {
+        !loading ? (
           <>
             {/* Preview area */}
             <div className="aspect-video rounded-xl  bg-gradient-to-br from-gray-100 to-gray-200 grid place-items-center text-sm text-gray-500">
@@ -68,7 +71,8 @@ export default function NasaMap({
                 </button>
               </div>
             </div>
-          </>)
+          </>
+        ) : null
       }
 
     </div>
