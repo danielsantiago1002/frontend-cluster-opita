@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
 import TerraSection from "./components/AboutTerra/TerraSection";
+import AdaConsumer from "./services/AdaConsumer";
 import type { Lang } from "./types";
 import { LAYERS, TEXT } from "./utils";
 
@@ -14,7 +15,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
-
       <Header
         brand={t.brand}
         navFeatures={t.navFeatures}
@@ -23,16 +23,15 @@ export default function App() {
       />
 
       <section className="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-2 gap-10 items-center">
-        <Hero
-          title={t.title}
-          desc={t.desc}
-        />
-        <NasaMap
-          layers={LAYERS}
-          labels={t.mapLabels}
-        />
+        <Hero title={t.title} desc={t.desc} />
+        <NasaMap layers={LAYERS} labels={t.mapLabels} />
       </section>
+      <div style={{ padding: "20px" }}>
+        <h1>Generador de Video desde Imágenes Base64</h1>
 
+        <AdaConsumer />
+        
+      </div>
       <Features
         title={t.featuresTitle}
         subtitle={t.featuresSubtitle}
