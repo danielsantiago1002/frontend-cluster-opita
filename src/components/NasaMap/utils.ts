@@ -103,7 +103,7 @@ export async function buildAdaVideoFromFrames(params: {
   const {
     items,
     fps = 24,
-    frameDurationSec = 0.25,
+    frameDurationSec = 1,
     cardDurationSec = 1.5,
     introDurationSec = 2.5,
     width = 1920,
