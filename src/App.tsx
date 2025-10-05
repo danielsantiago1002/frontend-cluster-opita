@@ -6,7 +6,7 @@ import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
 import TerraSection from "./components/AboutTerra/TerraSection";
 import type { Lang } from "./types";
-import { LAYERS, TEXT } from "./utils";
+import { TEXT } from "./utils";
 
 export default function App() {
   const [lang, setLang] = useState<Lang>("en");
@@ -28,7 +28,6 @@ export default function App() {
           desc={t.desc}
         />
         <NasaMap
-          layers={LAYERS}
           labels={t.mapLabels}
         />
       </section>

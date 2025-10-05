@@ -9,7 +9,6 @@ export type MapLabels = {
 };
 
 export type MapProps = {
-  layers: LayerOption[];
   labels: MapLabels;
   /** Optional initial values */
   initialLayerId?: string;

@@ -1,28 +1,15 @@
 import { useState } from "react";
 import type { MapProps } from "./types";
-
-const handleLoadCallback = ({ layerId, date }: { layerId: string; date: string }) => {
-  // TODO: Replace with real GIBS fetch/rendering
-  console.log("Load requested:", { layerId, date });
-};
+import { LAYERS_DATES } from "../../utils";
 
 export default function NasaMap({
-  layers,
   labels,
-  initialLayerId,
   initialDate,
 }: MapProps) {
-  const today = new Date().toISOString().slice(0, 10);
-  const [layerId, setLayerId] = useState<string>(initialLayerId ?? layers[0]?.id ?? "");
-  const [date, setDate] = useState<string>(initialDate ?? today);
-
-  const handleLoad = () => {
-    handleLoadCallback?.({ layerId, date });
-    // Temporary demo feedback:
-    if (!handleLoadCallback) {
-      alert(`${labels.load}: ${layerId} @ ${date}`);
-    }
-  };
+  const [dateTuple, setDateTuple] = useState<[string, string]>(
+    initialDate ? (initialDate.split("-") as [string, string]) : ["2000", "2024"]
+  );
+  const date = `${dateTuple[0]}-${dateTuple[1]}`;
 
   return (
     <div className="rounded-2xl border p-6 shadow-sm">
@@ -32,36 +19,29 @@ export default function NasaMap({
       </div>
 
       {/* Controls */}
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <label className="flex flex-col text-sm">
-          <span className="mb-1 text-gray-700">{labels.layerLabel}</span>
-          <select
-            className="rounded-lg border px-3 py-2"
-            value={layerId}
-            onChange={(e) => setLayerId(e.target.value)}
-          >
-            {layers.map((l) => (
-              <option key={l.id} value={l.id}>
-                {l.label}
-              </option>
-            ))}
-          </select>
-        </label>
+      <div className="mt-4 grid gap-3 sm:grid-cols-2">
 
         <label className="flex flex-col text-sm">
           <span className="mb-1 text-gray-700">{labels.dateLabel}</span>
-          <input
-            type="date"
+
+          <select
             className="rounded-lg border px-3 py-2"
             value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
+            onChange={(e) => setDateTuple(e.target.value.split("-") as [string, string])}
+          >
+            {LAYERS_DATES.map(([start, end]) => (
+              <option key={`${start}-${end}`} value={`${start}-${end}`}>
+                {start} - {end}
+              </option>
+            ))}
+          </select>
+
         </label>
 
         <div className="flex items-end">
           <button
             className="w-full rounded-lg border px-3 py-2 font-medium hover:bg-gray-50 active:translate-y-px"
-            onClick={handleLoad}
+            onClick={() => { }}
           >
             {labels.load}
           </button>
