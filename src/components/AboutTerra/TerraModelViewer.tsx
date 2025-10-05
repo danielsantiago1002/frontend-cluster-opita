@@ -33,20 +33,16 @@ function Loader() {
 }
 
 function TerraModel({ url }: { url: string }) {
-  // useGLTF is generic; cast to GLTF to avoid "any"
   const gltf = useGLTF(url) as GLTF;
 
-  // Clone once; keeps original cached by drei
   const scene = useMemo(() => gltf.scene.clone(true), [gltf.scene]);
 
   scene.traverse((obj: THREE.Object3D) => {
-    // Narrow to mesh
     if ((obj as THREE.Mesh).isMesh) {
       const m = obj as THREE.Mesh;
       m.castShadow = true;
       m.receiveShadow = true;
 
-      // Normalize to PBR if needed
       const mat = m.material as THREE.Material | THREE.Material[];
       if (Array.isArray(mat)) {
         m.material = mat.map((mm) =>
@@ -76,7 +72,7 @@ export default function TerraModelViewer({
   dpr={dpr}
   shadows
   gl={{ antialias: true, alpha: background === "transparent" }}
-  camera={{ position: [0, 2, 6], fov: 45 }}   // estaba en [0, 1.2, 3.6]
+  camera={{ position: [0, 2, 6], fov: 45 }}
   style={{ background }}
 >
 
@@ -90,7 +86,7 @@ export default function TerraModelViewer({
             observe
             margin={1.15}
             onFit={(box) => {
-            console.log("Model bounds:", box); // opcional
+            console.log("Model bounds:", box); 
             }}
         >
             <Center>
@@ -121,5 +117,4 @@ export default function TerraModelViewer({
   );
 }
 
-// Preload to avoid a visible fetch when the section scrolls into view
 useGLTF.preload?.("/terra.glb");
