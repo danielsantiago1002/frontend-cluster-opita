@@ -14,10 +14,9 @@ export const LAYERS: LayerOption[] = [
 
 export const TEXT = {
   en: {
-    brand: 'Orbital Maps',
-    badge: 'NASA • Simple starter',
-    title: 'Analyze NASA maps in minutes',
-    desc: 'Minimal React + Tailwind starter for exploring NASA Earth data (GIBS). Choose a layer, set a date, and preview tiles.',
+    brand: 'A.D.A (Astronomical Data Animator)',
+    title: 'Create Vegetal Cover, CO and Snow cover animations map in minutes',
+    desc: 'Leverage the NASA database GIBS data to create',
     primary: 'Preview a layer',
     secondary: 'See features',
     navFeatures: 'Features',
@@ -42,8 +41,7 @@ export const TEXT = {
     } satisfies MapLabels,
   },
   es: {
-    brand: 'Mapas Orbitales',
-    badge: 'NASA • Starter simple',
+    brand: 'A.D.A (Animador de Datos Astronómicos)',
     title: 'Analiza mapas de la NASA en minutos',
     desc: 'Starter mínimo con React + Tailwind para explorar datos de la Tierra (GIBS). Elige una capa, define fecha y previsualiza mosaicos.',
     primary: 'Previsualizar capa',

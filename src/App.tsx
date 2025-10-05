@@ -21,9 +21,8 @@ export default function App() {
         onToggleLang={() => setLang(lang === "en" ? "es" : "en")}
       />
 
-      <section className="mx-auto max-w-6xl px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <section className="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-2 gap-10 items-center">
         <Hero
-          badge={t.badge}
           title={t.title}
           desc={t.desc}
           primary={t.primary}
