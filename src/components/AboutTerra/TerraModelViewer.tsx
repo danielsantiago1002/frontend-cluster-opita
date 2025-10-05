@@ -85,9 +85,6 @@ export default function TerraModelViewer({
             clip
             observe
             margin={1.15}
-            onFit={(box) => {
-            console.log("Model bounds:", box); 
-            }}
         >
             <Center>
             <TerraModel url={src} />
