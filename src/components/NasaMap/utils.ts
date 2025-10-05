@@ -295,3 +295,12 @@ function drawContain(ctx: any, frameImg: any, arg2: number, arg3: number, width:
   throw new Error('Function not implemented.');
 }
 
+const LAYER_LABELS: Record<string, string> = {
+  "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day": "CO (Surface Mixing Ratio) — MOPITT",
+  "MODIS_Terra_L3_NDVI_Monthly": "NDVI — MODIS Terra (Monthly)",
+  "MODIS_Terra_NDSI_Snow_Cover": "Snow Coverage (NDSI) — MODIS Terra",
+};
+
+export const labelFor = (layerGroup: string) =>
+  LAYER_LABELS[layerGroup] ?? layerGroup;
+

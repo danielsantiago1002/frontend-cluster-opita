@@ -3,7 +3,7 @@ import type { MapProps } from "./types";
 import { LAYERS_DATES } from "../../utils";
 import { MapPicker } from "./MapPicker/MapPicker";
 import type { LatLngLiteral } from "leaflet";
-import { getLayersData } from "./utils";
+import { getLayersData, labelFor } from "./utils";
 
 // --- NEW: Mediabunny imports & helpers (all local in this file for convenience) ---
 import {
@@ -166,7 +166,7 @@ async function buildAdaVideoFromFrames(params: {
       ctx.fillStyle = "#fff";
       ctx.textAlign = "left";
       ctx.font = "600 40px system-ui";
-      ctx.fillText(item.layerGroup, 32, height - 88);
+      ctx.fillText(labelFor(item.layerGroup), 32, height - 88);
       ctx.font = "500 36px system-ui";
       ctx.fillText(item.date, 32, height - 36);
 
@@ -331,6 +331,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
         legends: LEGENDS,
         width: 1920,
         height: 1080,
+        frameDurationSec: 1,
       });
       const mainUrl = URL.createObjectURL(main);
       setVideoMainUrl(mainUrl);
@@ -362,7 +363,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
       ) : null}
 
       {
-        !loading && !videoMainUrl && !videoSideUrl ? <>
+        !loading && (!videoMainUrl && !videoSideUrl) ? <>
           {/* Preview/map */}
           <div className="aspect-video rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 grid place-items-center text-sm text-gray-500">
             <MapPicker
@@ -405,7 +406,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
         <div className="mt-6 grid gap-6">
           {videoMainUrl && (
             <div>
-              <h3 className="font-semibold mb-2">All Metrics Video</h3>
+              <h3 className="font-semibold mb-2">{labels.videoResultAllLayers}</h3>
               <video controls src={videoMainUrl} width={720} />
               <div>
                 <a className="underline" href={videoMainUrl} download="ada-video.mp4">
@@ -416,7 +417,7 @@ export default function NasaMap({ labels, initialDate }: MapProps) {
           )}
           {videoSideUrl && (
             <div>
-              <h3 className="font-semibold mb-2">Snow vs NDVI (split view)</h3>
+              <h3 className="font-semibold mb-2">{labels.videoResultSideBySide}</h3>
               <video controls src={videoSideUrl} width={720} />
               <div>
                 <a className="underline" href={videoSideUrl} download="ada-snow-vs-ndvi.mp4">

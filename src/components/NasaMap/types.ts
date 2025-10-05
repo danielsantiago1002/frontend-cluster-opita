@@ -6,6 +6,8 @@ export type MapLabels = {
   dateLabel: string;
   load: string;
   mapPlaceholder: string;
+  videoResultAllLayers: string;
+  videoResultSideBySide: string;
 };
 
 export type MapProps = {

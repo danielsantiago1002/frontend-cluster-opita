@@ -4,8 +4,8 @@ export const TEXT = {
   en: {
     brand: 'A.D.A (Astronomical Data Animator)',
     title:
-      'Create Vegetal Cover, CO level and Snow cover map animations in minutes',
-    desc: 'Leverage some of the NASA Terra Satellite instruments data (ASTER, MODIS, MOPITT) to create animations of Vegetal Cover, CO level and Snow cover. Define a date range and a point of interest in the world to start generating your animation.',
+      'Create Vegetation coverage, CO level and Snow coverage map animations in minutes',
+    desc: 'Leverage some of the NASA Terra Satellite instruments data (ASTER, MODIS, MOPITT) to create animations of Vegetation coverage, CO level and Snow coverage. Define a date range and a point of interest in the world to start generating your animation.',
     navFeatures: 'Features',
     featuresTitle: 'Features',
     featuresSubtitle: 'Essentials for exploring NASA layers.',
@@ -25,6 +25,8 @@ export const TEXT = {
       dateLabel: 'Date Range (Years)',
       load: 'Create Animation',
       mapPlaceholder: 'NASA GIBS map preview here',
+      videoResultAllLayers: 'Video result with all layers (CO, NDVI, Snow)',
+      videoResultSideBySide: 'Snow vs NDVI (split view)',
     } satisfies MapLabels,
     terra: {
       heading: 'Meet Terra: NASA’s flagship Earth-observing satellite',
@@ -60,6 +62,8 @@ export const TEXT = {
       dateLabel: 'Fecha (Rango de años)',
       load: 'Crear animación',
       mapPlaceholder: 'Vista previa del mapa GIBS aquí',
+      videoResultAllLayers: 'Video con todas las capas (CO, NDVI, Nieve)',
+      videoResultSideBySide: 'Nieve vs NDVI (vista dividida)',
     } satisfies MapLabels,
     terra: {
       heading:
@@ -109,10 +113,10 @@ export const INDIVIDUAL_LAYERS = [
   },
   {
     id: 'MODIS_Terra_L3_NDVI_Monthly',
-    label: 'Vegetal Cover (MODIS)',
+    label: 'Vegetation Coverage (MODIS)',
   },
   {
     id: 'MODIS_Terra_NDSI_Snow_Cover',
-    label: 'Snow Cover (MODIS)',
+    label: 'Snow Coverage (MODIS)',
   },
 ]
