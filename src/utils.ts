@@ -7,18 +7,25 @@ export const TEXT = {
       'Create Vegetation coverage, CO level and Snow coverage map animations in minutes',
     desc: 'Leverage some of the NASA Terra Satellite instruments data (ASTER, MODIS, MOPITT) to create animations of Vegetation coverage (NDVI), CO (carbon monoxide) level and Snow coverage. Define a date range and a point of interest in the map to start generating your animation.',
     navFeatures: 'Features',
-    featuresTitle: 'Features',
-    featuresSubtitle: 'Essentials for exploring NASA layers.',
+    featuresTitle: 'Use Cases',
+    featuresSubtitle:
+      'Examples of A.D.A use cases to explore NASA TERRA layers.',
     features: [
       {
-        title: 'GIBS Layers',
-        body: 'Load MODIS, VIIRS, Blue Marble, and more.',
+        title: 'Patagonia',
+        body: 'Visualize changes in snow and vegetation coverage in Patagonia.',
+        youtubeId: 'AHKI1pDvdHs',
       },
       {
-        title: 'Time Controls',
-        body: 'Switch dates to spot changes over time.',
+        title: 'Africa',
+        body: 'Check Carbon Monoxide levels time variations.',
+        youtubeId: 'z00u-xKR3XI',
       },
-      { title: 'Simple UI', body: 'Clean light theme without complexity.' },
+      {
+        title: 'Simple UI',
+        body: 'Clean light theme without complexity.',
+        youtubeId: 'AHKI1pDvdHs',
+      },
     ],
     mapLabels: {
       layerLabel: 'Layer',
@@ -51,12 +58,17 @@ export const TEXT = {
       'Crea animaciones de cobertura vegetal, Niveles de CO y cobertura de nieve en minutos',
     desc: 'Utiliza los datos de algunos instrumentos del satélite Terra de la NASA (ASTER, MODIS, MOPITT) para crear animaciones de la cobertura vegetal (NDVI), el nivel de CO (monóxido de carbono) y la cobertura de nieve. Define un rango de fechas y un punto de interés en el mapa para empezar a generar su animación.',
     navFeatures: 'Características',
-    featuresTitle: 'Características',
-    featuresSubtitle: 'Esenciales para explorar capas de la NASA.',
+    featuresTitle: 'Casos de Uso',
+    featuresSubtitle:
+      'Ejemplos de casos de uso de A.D.A para explorar capas de NASA TERRA.',
     features: [
-      { title: 'Capas GIBS', body: 'Carga MODIS, VIIRS, Blue Marble y más.' },
-      { title: 'Tiempo', body: 'Cambia fechas para ver variaciones.' },
-      { title: 'UI simple', body: 'Tema claro sin complejidad extra.' },
+      {
+        title: 'Patagonia',
+        body: 'Visualización de cambios en la cobertura de nieve y de vegetación en la Patagonia.',
+        youtubeId: 'AHKI1pDvdHs',
+      },
+      { title: 'Africa', body: 'Cambia fechas para ver variaciones.', youtubeId: 'z00u-xKR3XI' },
+      { title: 'UI simple', body: 'Tema claro sin complejidad extra.', youtubeId: 'AHKI1pDvdHs' },
     ],
     mapLabels: {
       layerLabel: 'Capa',

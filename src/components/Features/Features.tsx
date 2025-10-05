@@ -1,3 +1,4 @@
+import YoutubePlayer from "../YoutubePlayer/YoutubePlayer";
 import type { FeaturesProps } from "./types";
 
 export default function Features({ title, subtitle, items }: FeaturesProps) {
@@ -11,6 +12,9 @@ export default function Features({ title, subtitle, items }: FeaturesProps) {
           {items.map((it) => (
             <div key={it.title} className="rounded-xl border bg-white p-6 shadow-sm">
               <div className="text-lg font-medium">{it.title}</div>
+              <div className="mt-4 aspect-video w-full overflow-hidden rounded-lg bg-black">
+                <YoutubePlayer videoId={it.youtubeId} showCustomUI={false} />
+              </div>
               <p className="mt-2 text-sm text-gray-600">{it.body}</p>
             </div>
           ))}

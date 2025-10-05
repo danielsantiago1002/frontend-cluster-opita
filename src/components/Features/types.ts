@@ -1,4 +1,6 @@
-type FeatureItem = { title: string; body: string };
+type FeatureItem = {
+  youtubeId: string; title: string; body: string 
+};
 
 export type FeaturesProps = {
   title: string;
