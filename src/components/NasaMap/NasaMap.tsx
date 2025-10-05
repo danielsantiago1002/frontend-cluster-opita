@@ -1,11 +1,14 @@
 import { useState } from "react";
 import type { MapProps } from "./types";
 import { LAYERS_DATES } from "../../utils";
+import { MapPicker } from "./MapPicker/MapPicker";
+import type { LatLngLiteral } from "leaflet";
 
 export default function NasaMap({
   labels,
   initialDate,
 }: MapProps) {
+  const [picked, setPicked] = useState<LatLngLiteral | null>(null);
   const [dateTuple, setDateTuple] = useState<[string, string]>(
     initialDate ? (initialDate.split("-") as [string, string]) : ["2000", "2024"]
   );
@@ -14,8 +17,14 @@ export default function NasaMap({
   return (
     <div className="rounded-2xl border p-6 shadow-sm">
       {/* Preview area */}
-      <div className="aspect-video rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 grid place-items-center text-sm text-gray-500">
-        {labels.mapPlaceholder}
+      <div className="aspect-video rounded-xl  bg-gradient-to-br from-gray-100 to-gray-200 grid place-items-center text-sm text-gray-500">
+          <MapPicker
+            height="100%"
+            onSelect={(coord) => {
+              setPicked(coord);
+              console.log('User selected:', coord);
+            }}
+          />
       </div>
 
       {/* Controls */}
