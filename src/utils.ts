@@ -22,9 +22,9 @@ export const TEXT = {
         youtubeId: 'z00u-xKR3XI',
       },
       {
-        title: 'Simple UI',
-        body: 'Clean light theme without complexity.',
-        youtubeId: 'AHKI1pDvdHs',
+        title: 'Colombia "Sierra Nevada de Santa Marta"',
+        body: 'Review seasonal snow coverage changes.',
+        youtubeId: 'Ib-i9ILeKAA',
       },
     ],
     mapLabels: {
@@ -68,7 +68,7 @@ export const TEXT = {
         youtubeId: 'AHKI1pDvdHs',
       },
       { title: 'Africa', body: 'Cambia fechas para ver variaciones.', youtubeId: 'z00u-xKR3XI' },
-      { title: 'UI simple', body: 'Tema claro sin complejidad extra.', youtubeId: 'AHKI1pDvdHs' },
+      { title: 'Colombia "Sierra Nevada de Santa Marta"', body: 'Revisar cambios en la cobertura de nieve estacional.', youtubeId: 'Ib-i9ILeKAA' },
     ],
     mapLabels: {
       layerLabel: 'Capa',
