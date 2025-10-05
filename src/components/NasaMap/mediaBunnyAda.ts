@@ -1,11 +1,3 @@
-// mediaBunnyAda.ts
-import {
-  Output,
-  Mp4OutputFormat,
-  BufferTarget,
-  CanvasSource,
-  QUALITY_HIGH,
-} from "mediabunny";
 
 // Your item type
 export type AdaFrame = {
@@ -77,6 +69,7 @@ export async function makeLayerTitleCanvas(
 }
 
 // Convert a Blob image -> HTMLImageElement for drawing
+//@ts-ignore
 async function blobToImage(blob: Blob): Promise<HTMLImageElement> {
   const url = URL.createObjectURL(blob);
   try {
@@ -90,6 +83,7 @@ async function blobToImage(blob: Blob): Promise<HTMLImageElement> {
   }
 }
 
+//@ts-ignore
 async function loadImageAny(
   src: Blob | string | HTMLImageElement
 ): Promise<{ img: HTMLImageElement; urlToRevoke?: string }> {
@@ -111,7 +105,8 @@ async function loadImageAny(
   return { img, urlToRevoke: url };
 }
 
-function drawContain(
+//@ts-ignore
+function _drawContain(
   ctx: CanvasRenderingContext2D,
   img: CanvasImageSource,
   x: number,

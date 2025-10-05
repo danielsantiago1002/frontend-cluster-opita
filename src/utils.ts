@@ -12,7 +12,7 @@ export const TEXT = {
       'Examples of A.D.A use cases to explore NASA TERRA layers.',
     features: [
       {
-        title: 'Patagonia',
+        title: 'Patagonia (Argentina & Chile)',
         body: 'Visualize changes in snow and vegetation coverage in Patagonia.',
         youtubeId: 'AHKI1pDvdHs',
       },
@@ -22,8 +22,8 @@ export const TEXT = {
         youtubeId: 'z00u-xKR3XI',
       },
       {
-        title: 'Colombia "Sierra Nevada de Santa Marta"',
-        body: 'Review seasonal snow coverage changes.',
+        title: 'Colombia',
+        body: 'Review seasonal snow coverage changes in the Sierra Nevada de Santa Marta (Colombia).',
         youtubeId: 'Ib-i9ILeKAA',
       },
     ],
@@ -63,12 +63,12 @@ export const TEXT = {
       'Ejemplos de casos de uso de A.D.A para explorar capas de NASA TERRA.',
     features: [
       {
-        title: 'Patagonia',
+        title: 'Patagonia (Argentina y Chile)',
         body: 'Visualización de cambios en la cobertura de nieve y de vegetación en la Patagonia.',
         youtubeId: 'AHKI1pDvdHs',
       },
       { title: 'Africa', body: 'Cambia fechas para ver variaciones.', youtubeId: 'z00u-xKR3XI' },
-      { title: 'Colombia "Sierra Nevada de Santa Marta"', body: 'Revisar cambios en la cobertura de nieve estacional.', youtubeId: 'Ib-i9ILeKAA' },
+      { title: 'Colombia', body: 'Revisar cambios en la cobertura de nieve estacional en la Sierra Nevada de Santa Marta (Colombia).', youtubeId: 'Ib-i9ILeKAA' },
     ],
     mapLabels: {
       layerLabel: 'Capa',

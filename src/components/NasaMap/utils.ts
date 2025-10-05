@@ -283,15 +283,15 @@ export const getLayersData = async (
 };
 
 
-function createCanvas(width: number, height: number) {
+function createCanvas(_width: number, _height: number) {
   throw new Error('Function not implemented.');
 }
 
-function loadImageAny(arg0: string | Blob | HTMLImageElement) {
+function loadImageAny(_arg0: string | Blob | HTMLImageElement) {
   throw new Error('Function not implemented.');
 }
 
-function drawContain(ctx: any, frameImg: any, arg2: number, arg3: number, width: number, contentH: number) {
+function drawContain(_ctx: any, _frameImg: any, _arg2: number, _arg3: number, _width: number, _contentH: number) {
   throw new Error('Function not implemented.');
 }
 
