@@ -15,10 +15,8 @@ export const LAYERS: LayerOption[] = [
 export const TEXT = {
   en: {
     brand: 'A.D.A (Astronomical Data Animator)',
-    title: 'Create Vegetal Cover, CO and Snow cover animations map in minutes',
-    desc: 'Leverage the NASA database GIBS data to create',
-    primary: 'Preview a layer',
-    secondary: 'See features',
+    title: 'Create Vegetal Cover, CO level and Snow cover map animations in minutes',
+    desc: 'Leverage the NASA database GIBS data to create animations of Vegetal Cover, CO level and Snow cover. Define a date range and a point of interest in the world to start generating your animation.',
     navFeatures: 'Features',
     featuresTitle: 'Features',
     featuresSubtitle: 'Essentials for exploring NASA layers.',
@@ -42,10 +40,8 @@ export const TEXT = {
   },
   es: {
     brand: 'A.D.A (Animador de Datos Astronómicos)',
-    title: 'Analiza mapas de la NASA en minutos',
-    desc: 'Starter mínimo con React + Tailwind para explorar datos de la Tierra (GIBS). Elige una capa, define fecha y previsualiza mosaicos.',
-    primary: 'Previsualizar capa',
-    secondary: 'Ver características',
+    title: 'Crea animaciones de cobertura vegetal, Niveles de CO y cobertura de nieve en minutos',
+    desc: 'Aprovecha la base de datos de la NASA GIBS para crear animaciones de la cobertura vegetal, CO y cobertura de nieve. Define un rango de fechas y un punto de interés en el mundo para comenzar a generar tu animación.',
     navFeatures: 'Características',
     featuresTitle: 'Características',
     featuresSubtitle: 'Esenciales para explorar capas de la NASA.',

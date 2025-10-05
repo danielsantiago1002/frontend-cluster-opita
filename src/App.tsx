@@ -25,8 +25,6 @@ export default function App() {
         <Hero
           title={t.title}
           desc={t.desc}
-          primary={t.primary}
-          secondary={t.secondary}
         />
         <NasaMap
           layers={LAYERS}
