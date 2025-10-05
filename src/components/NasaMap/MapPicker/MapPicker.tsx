@@ -103,8 +103,13 @@ export const MapPicker: React.FC<MapPickerProps> = ({
         zoom={initialZoom}
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom
+        zoomSnap={1}
       >
         <TileLayer
+          detectRetina={false}
+          updateWhenZooming={true}
+          updateWhenIdle={true}
+          keepBuffer={2}
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
