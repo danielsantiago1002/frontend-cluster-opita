@@ -37,6 +37,21 @@ export const TEXT = {
       load: 'Load',
       mapPlaceholder: 'NASA GIBS map preview here',
     } satisfies MapLabels,
+    terra: {
+      heading: "Meet Terra: NASA’s flagship Earth-observing satellite",
+      body1:
+        "Launched in 1999, Terra is part of NASA’s Earth Observing System. For more than twenty-five years it has provided global, consistent observations that help scientists understand clouds, aerosols, land change, sea ice, fires, and energy balance.",
+      body2:
+        "Terra flies in a near-polar, sun-synchronous orbit and carries a suite of complementary instruments that observe the Earth system in tandem, enabling long-term climate data records and daily monitoring.",
+      instrumentsTitle: "Onboard instruments",
+      instruments: [
+        "MODIS — Moderate Resolution Imaging Spectroradiometer",
+        "CERES — Clouds & the Earth’s Radiant Energy System",
+        "MISR — Multi-angle Imaging SpectroRadiometer",
+        "ASTER — Advanced Spaceborne Thermal Emission & Reflection Radiometer",
+        "MOPITT — Measurements of Pollution in the Troposphere",
+      ],
+    },
   },
   es: {
     brand: 'A.D.A (Animador de Datos Astronómicos)',
@@ -56,5 +71,20 @@ export const TEXT = {
       load: 'Cargar',
       mapPlaceholder: 'Vista previa del mapa GIBS aquí',
     } satisfies MapLabels,
+    terra: {
+      heading: "Conoce a Terra: el satélite insignia de observación de la Tierra",
+      body1:
+        "Lanzado en 1999, Terra hace parte del Earth Observing System de la NASA. Durante más de veinticinco años ha entregado observaciones globales y consistentes que ayudan a entender nubes, aerosoles, cambios en tierra, hielo marino, incendios y el balance de energía.",
+      body2:
+        "Terra vuela en una órbita casi polar y sincrónica con el Sol, y transporta un conjunto de instrumentos complementarios que observan el sistema terrestre en conjunto, permitiendo series climáticas de largo plazo y monitoreo diario.",
+      instrumentsTitle: "Instrumentos a bordo",
+      instruments: [
+        "MODIS — Espectrorradiómetro de Imágenes de Resolución Moderada",
+        "CERES — Nubes y Sistema de Energía Radiante de la Tierra",
+        "MISR — Espectrorradiómetro de Imágenes Multiángulo",
+        "ASTER — Radiómetro Avanzado de Emisión Térmica y Reflexión",
+        "MOPITT — Mediciones de Contaminación en la Tropósfera",
+      ],
+    },
   },
 }
