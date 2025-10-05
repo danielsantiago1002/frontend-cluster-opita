@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
+import TerraSection from "./components/AboutTerra/TerraSection";
 import type { Lang } from "./types";
 import { LAYERS, TEXT } from "./utils";
 
@@ -37,6 +38,8 @@ export default function App() {
         subtitle={t.featuresSubtitle}
         items={t.features}
       />
+
+      <TerraSection copy={t.terra} />
 
       <Footer
         brand={t.brand}
