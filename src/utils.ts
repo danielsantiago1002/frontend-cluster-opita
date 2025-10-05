@@ -23,7 +23,7 @@ export const TEXT = {
     mapLabels: {
       layerLabel: 'Layer',
       dateLabel: 'Date Range (Years)',
-      load: 'Load',
+      load: 'Create Animation',
       mapPlaceholder: 'NASA GIBS map preview here',
     } satisfies MapLabels,
     terra: {
@@ -58,7 +58,7 @@ export const TEXT = {
     mapLabels: {
       layerLabel: 'Capa',
       dateLabel: 'Fecha (Rango de años)',
-      load: 'Cargar',
+      load: 'Crear animación',
       mapPlaceholder: 'Vista previa del mapa GIBS aquí',
     } satisfies MapLabels,
     terra: {
@@ -82,17 +82,13 @@ export const TEXT = {
 
 export const LAYERS_DATES = [
   [2001, 2003],
-  [2003, 2005],
-  [2005, 2007],
+  [2004, 2006],
   [2007, 2009],
-  [2009, 2011],
-  [2011, 2013],
+  [2010, 2012],
   [2013, 2015],
-  [2015, 2017],
-  [2017, 2019],
+  [2016, 2018],
   [2019, 2021],
-  [2021, 2023],
-  [2023, 2024],
+  [2022, 2024]
 ]
 
 export const BASE_LAYERS = [

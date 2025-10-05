@@ -40,7 +40,7 @@ export default function NasaMap({
 
         <div className="flex items-end">
           <button
-            className="w-full rounded-lg border px-3 py-2 font-medium hover:bg-gray-50 active:translate-y-px"
+            className="w-full rounded-lg border px-3 py-2 font-medium bg-gray-700 text-white hover:bg-gray-600 hover:cursor-pointer active:translate-y-px"
             onClick={() => { }}
           >
             {labels.load}
