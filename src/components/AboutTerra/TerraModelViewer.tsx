@@ -115,3 +115,4 @@ export default function TerraModelViewer({
 }
 
 useGLTF.preload?.("./terra.glb");
+
