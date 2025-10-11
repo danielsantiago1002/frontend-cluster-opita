@@ -32,7 +32,7 @@ export default function TerraSection({ copy }: TerraSectionProps) {
 
       {/* 3D */}
       <div id="terra-3d" className="rounded-2xl border border-gray-200 shadow-sm overflow-hidden mt-8">
-        <TerraModelViewer src="/terra.glb" height={460} background="transparent" />
+        <TerraModelViewer src="./terra.glb" height={460} background="transparent" />
         <div className="px-4 py-2 text-xs text-gray-500 border-t">
           Click & drag to rotate • Wheel/pinch to zoom
         </div>

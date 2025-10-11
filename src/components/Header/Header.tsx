@@ -1,5 +1,5 @@
 import type { HeaderProps } from "./types";
-import adaLogo from "../../../public/ada_logo.svg"; // adjust path if needed
+import adaLogo from "../../assets/ada_logo.svg"; // adjust path if needed
 
 export default function Header({ brand, lang, onToggleLang }: HeaderProps) {
   return (

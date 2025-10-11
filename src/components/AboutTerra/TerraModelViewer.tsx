@@ -58,7 +58,7 @@ function TerraModel({ url }: { url: string }) {
 }
 
 export default function TerraModelViewer({
-  src = "/terra.glb",
+  src = './terra.glb',
   height = 480,
   background = "transparent",
   allowZoom = true,
@@ -114,4 +114,4 @@ export default function TerraModelViewer({
   );
 }
 
-useGLTF.preload?.("/terra.glb");
+useGLTF.preload?.("./terra.glb");
