@@ -122,3 +122,4 @@ function _drawContain(
   const dy = y + (h - dh) / 2;
   ctx.drawImage(img, dx, dy, dw, dh);
 }
+

@@ -304,3 +304,4 @@ const LAYER_LABELS: Record<string, string> = {
 export const labelFor = (layerGroup: string) =>
   LAYER_LABELS[layerGroup] ?? layerGroup;
 
+

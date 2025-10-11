@@ -4,3 +4,4 @@ export type FooterProps = {
   lang: "en" | "es";
   onToggleLang: () => void;
 };
+

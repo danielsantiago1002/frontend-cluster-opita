@@ -134,3 +134,4 @@ export const INDIVIDUAL_LAYERS = [
     label: 'Snow Coverage (MODIS)',
   },
 ]
+
